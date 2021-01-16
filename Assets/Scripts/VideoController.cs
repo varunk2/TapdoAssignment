@@ -36,8 +36,6 @@ public class VideoController : MonoBehaviour {
 
     void Update() {
 
-        Debug.Log(_videoPlayer.time);
-
         if ((Input.GetKeyDown(KeyCode.Space)) && (_videoPlayer.isPlaying == true)) {
             _videoPlayer.Pause();
         } else if ((Input.GetKeyDown(KeyCode.Space)) && (_videoPlayer.isPlaying == false)) {
